@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500;
+  }
+
+  /* Tambahan untuk Aurora */
+  .aurora-blob {
+    @apply absolute rounded-full mix-blend-screen filter blur-[80px] opacity-60 animate-aurora;
+  }
+}
+
+body {
+  background-color: #000;
+   font-family: "Lexend", sans-serif;
+  color: white;
+  overflow-x: hidden; /* Mencegah scrollbar horizontal jika blob keluar layar */
+}
