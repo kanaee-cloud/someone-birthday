@@ -88,29 +88,40 @@ Sekali lagi, Happy Birthday ya. May this become the happiest year of your life.`
     },
     {
       id: 10,
-      title: "",
-      date: "23, 25 Dec 2025",
-      desc: "INI HARI TERKACHOWWW SIH JUJUR, alpredo sgt merusak suasana dan planning saya. kita juga malah gajadi ke perpus jirlah. TAPI TAPI EKHEM AKHIRNYA APA COABBSDABAJSBFBSABFJASHBF, we're holding hand each other. i felt like secure. HUHUHUUU, istilah nya apa ya, oh iya Head Over Heels."
+      title: "bagikopi incident OKDADOWQPODW",
+      date: "30 Dec 2025",
+      desc: "syg sekali yh kita tidak jadi ke tahura di hari itu. yh utamakan kerkom dek, prioritas utama. TAPI KARENA KERKOM INI KITA JADINYA KE KIARA LAGI AKDOKAKDW, padahal anda sudah pake setup tahura jir, siap survival. OKEEE ANDA TAU SENDIRI BAGAIMANA KITA KETIKA DI BAGIKOPI ekachweoakfoeafefo. sumpah tapi pw bgt sih jir waktu itu, gw jg jadi makin nyaman karena presence elu, especially physical touch dari elu OKDOAKWDOA. tanggung jawab hey anda"
     },
-    
+    {
+      id: 11,
+      title: "chill at dwara coffee",
+      date: "03 Jan 2026",
+      desc: "omg omg, HADHHAWIHDIAW kenapa setiap kita main setelah itb incident semakjfaijfiejfaje. dahlah lachoafjdwj, kita nobar doang nggak sih? habis dari perpus juga kan ya kalo gak salah, eh apa karena gajadi ps ya, SMPAH LUPA ANIRANSFDNAN, jika anda ingat segera hubungi mr smooth operator yh."
+    },
+    {
+      id: 12,
+      title: "my birthday",
+      date: "13 Jan 2026",
+      desc: "OKEEE JAKJSDAJSDJAJWKWLKDAWJ anda hampir memasuki section akhir, selamat anda sudah membaca yappingan saya sejauh ini. dannnnnnnnnnnnn this is my happiest birthday, jujur. elu sih hadiah nya, slmt yh anda menjadi salah satu mvp di hidup saya selain keluarga saya ODOKWAOKDKDOAWDOWAKDOWA."
+    }
   ],
   philosophy: {
-    date: "22 January",
-    short: "Orang yang lahir tanggal 22 Januari adalah visioner yang praktis.",
-    full: "Mereka yang lahir pada tanggal 22 Januari dikenal sebagai individu yang memiliki tekad kuat, kreatif, dan sangat orisinal. Kamu punya cara unik melihat dunia, gabungan antara logika yang tajam dan intuisi yang peka. Angka 22 adalah 'Master Builder', yang berarti kamu punya potensi besar untuk mewujudkan mimpi-mimpimu menjadi kenyataan."
+    date: "Hey, there's another message for you",
+    short: "guess who",
+    full: "MIAWWWW miaw miaw miaw MIAWWAYSDSADW!!! miaw miaw miawww,, miwa miawmiaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw!!! Artinya: Selamat ulang tahun Naura Sayyidah Maryam! Semoga di usiamu yang ke-19 ini, kamu selalu diberikan kesehatan, kebahagiaan, dan kesuksesan dalam segala hal yang kamu lakukan. Teruslah menjadi pribadi yang baik, penuh semangat, dan selalu berusaha untuk meraih impian-impianmu. Ingatlah bahwa setiap tahun adalah kesempatan baru untuk belajar dan tumbuh. Semoga perjalanan hidupmu selalu dipenuhi dengan cinta dan dukungan dari orang-orang terdekatmu. Happy birthday sekali lagi, Naura! MIAWWWW!!!"
   },
   wishes: [
-    "Semoga sehat selalu ✨",
-    "Makin bahagia 😊",
-    "Kuliah lancar 📚",
-    "Rejeki mengalir deras 💸",
-    "Tetap jadi orang baik ❤️"
+    "taula",
+    "pacar arsal",
+    "pacar kakaknya naazira",
+    "temennya tia",
+    "when yh makan sama teh putri"
   ],
   shoutouts: [
-    { name: "Dimas", msg: "HBD Bro! Sukses terus!" },
-    { name: "Sarah", msg: "Happy Level Up! 🎂" },
-    { name: "Rina", msg: "Wish you all the best!" },
-    { name: "Joko", msg: "Traktiran jangan lupa." }
+    { name: "Arzell", msg: "eyoooooo my dc buddy, happy birthday yaa! wish you all the best lah pokoknya, dan selalu dc sama gw plss HUHUHUUUU. when yh supermarket together lagi, when yh nobar home alone JNDAJDA, canda. hbd yaaaaa" },
+    { name: "Mr. Smooth Operator", msg: "hey my senorita, happy birthday. they say perfection is impossible, pero claramente no te han visto a ti. you make getting older look like an art form. simplemente espectacular." },
+    { name: "Mang Ali", msg: "Neng naura,,, wilujeng tepang taun nya,,, cing panjang umur, sehat selalu, dan jadi kebanggan orang tua nya neng geulis,,, ulah hilap oge bintang 5 na kanggo abdi" },
+    { name: "Mas Tristan", msg: "HEYYYYY HBD YA CUYYYY EGILAAAAAA udah tua jirlah 19 tahun, tambah 1 tahun lagi tuh jadi seperlima abad ente OADKOWKWKDWOKDW, kolot yh, oke intinya gitu aja sih hbd dah, jan asing ye, jan kemana mana." }
   ],
   music: {
     title: "It's Your Day",

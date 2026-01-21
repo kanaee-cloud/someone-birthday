@@ -100,7 +100,7 @@ const RevealScreen = ({ onUnlock }) => {
           <Lock size={48} className="text-cyan-400" />
         </div>
         <h1 className="text-2xl font-bold mb-2 text-center text-cyan-50">Enter Access Code</h1>
-        <p className="text-slate-400 text-sm mb-6 text-center">Hint: check your gmail inbox.</p>
+        <p className="text-slate-400 text-sm mb-6 text-center">Hint: check your gmail inbox (6 digit code).</p>
       </motion.div>
 
       <form onSubmit={handleSubmit} className="w-full max-w-xs flex flex-col gap-4">
@@ -253,7 +253,7 @@ const MomentsRecap = () => {
 
   return (
     <div className="h-full pt-20 px-6 overflow-hidden relative z-10">
-      <h2 className="text-3xl font-bold mb-6 text-white">Top Moments</h2>
+      <h2 className="text-3xl font-bold mb-6 text-white">moments written in times.</h2>
       <div className="grid gap-4 max-h-[70vh] overflow-y-auto pb-20 scrollbar-hide">
         {birthdayData.moments.map((moment, idx) => (
           <motion.div
@@ -284,17 +284,18 @@ const PhilosophyScreen = () => {
   return (
     <div className="h-full flex flex-col justify-center px-6 relative z-10">
       <div className="bg-gradient-to-br from-indigo-950/80 to-blue-950/80 backdrop-blur-md p-8 rounded-3xl border border-white/10 text-center shadow-xl">
-        <h2 className="text-2xl font-bold mb-2 text-white">Born on {birthdayData.philosophy.date}</h2>
+        <h2 className="text-2xl font-bold mb-2 text-white">{birthdayData.philosophy.date}</h2>
         <div className="w-16 h-1 bg-cyan-500/50 mx-auto my-4 rounded-full" />
-        <p className="text-indigo-100 mb-6 font-light italic">"{birthdayData.philosophy.short}"</p>
+        <p className="text-indigo-100 mb-6">{birthdayData.philosophy.short} </p>
         <button 
           onClick={() => setIsOpen(true)}
           className="bg-white/90 text-indigo-900 px-6 py-2 rounded-full text-sm font-bold hover:bg-white transition-colors"
         >
-          Read More
+          Open
         </button>
       </div>
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} title="The Philosophy">
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} title="THIS IS FROM MIAWZUKIII">
+        <img src="https://i.pinimg.com/1200x/27/1f/28/271f28cc48330704ce6d8e2232795bdb.jpg" alt="azuki" className="w-52 h-52"/>
         <p>{birthdayData.philosophy.full}</p>
       </Modal>
     </div>
@@ -303,7 +304,7 @@ const PhilosophyScreen = () => {
 
 const WishesScreen = () => (
   <div className="h-full flex flex-col justify-center px-6 text-center relative z-10">
-    <h2 className="text-3xl font-bold mb-8 text-white">Hopes for You</h2>
+    <h2 className="text-3xl font-bold mb-8 text-white">pronouns anda</h2>
     <div className="space-y-4">
       {birthdayData.wishes.map((wish, idx) => (
         <motion.div
@@ -321,8 +322,14 @@ const WishesScreen = () => (
 );
 
 const ShoutoutsScreen = () => (
-  <div className="h-full overflow-y-auto pt-24 px-6 relative z-10">
-    <h2 className="text-3xl font-bold mb-6 text-white">Friend's Shoutouts</h2>
+  <div className="h-full overflow-y-auto 
+    [&::-webkit-scrollbar]:w-1.5                 
+            [&::-webkit-scrollbar-track]:bg-transparent  
+            [&::-webkit-scrollbar-thumb]:bg-white/20     
+            [&::-webkit-scrollbar-thumb]:rounded-full    
+            hover:[&::-webkit-scrollbar-thumb]:bg-white/40
+    pt-24 px-6 relative z-10">
+    <h2 className="text-3xl font-bold mb-6 text-white">alter ego gw mw speak up</h2>
     <div className="grid grid-cols-2 gap-3">
       {birthdayData.shoutouts.map((item, idx) => (
         <motion.div
@@ -341,37 +348,43 @@ const ShoutoutsScreen = () => (
 );
 
 const MusicPlayer = () => {
-  const [playing, setPlaying] = useState(true);
-  
   return (
-    <div className="h-full flex flex-col items-center justify-center px-6 relative overflow-hidden z-10">
+    <div className="h-full flex flex-col items-center justify-center px-6 text-center relative z-10">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="space-y-6"
+      >
+        {/* Dekorasi kecil (Bintang/Sparkle) */}
+        <div className="animate-pulse">
+          <div className="w-1 h-1 bg-cyan-400 rounded-full mx-auto shadow-[0_0_10px_#22d3ee]" />
+          <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent mx-auto mt-4 opacity-50" />
+        </div>
+
+        {/* Teks Ucapan */}
+        <h2 className="text-xl md:text-2xl font-light text-slate-300 tracking-wide">
+          Once Again, happy birthday ya.
+        </h2>
+
+        {/* Nama dengan Efek Gradient & Glow */}
+        <h1 className="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-400 to-purple-400 drop-shadow-[0_0_25px_rgba(6,182,212,0.4)] leading-tight">
+          Naura Sayyidah<br />Maryam
+        </h1>
+
+        {/* Garis penutup pudar */}
+        <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent mx-auto mt-4 opacity-50" />
+      </motion.div>
       
-      <div className="z-10 w-full max-w-xs bg-slate-900/40 backdrop-blur-xl p-6 rounded-3xl border border-white/10 shadow-2xl">
-        <div className="aspect-square bg-gradient-to-br from-slate-800 to-black rounded-2xl mb-6 flex items-center justify-center shadow-inner relative overflow-hidden">
-          <div className="absolute inset-0 bg-cyan-900/20 mix-blend-overlay"></div>
-          <Music size={48} className="text-cyan-600/50" />
-        </div>
-        <h3 className="text-xl font-bold mb-1 text-white">{birthdayData.music.title}</h3>
-        <p className="text-slate-400 text-sm mb-6">{birthdayData.music.artist}</p>
-        
-        <div className="w-full bg-slate-700/50 h-1.5 rounded-full mb-6 overflow-hidden">
-          <motion.div 
-            initial={{ width: 0 }} 
-            animate={{ width: "100%" }} 
-            transition={{ duration: 30, ease: "linear" }}
-            className="bg-cyan-500 h-full shadow-[0_0_10px_rgba(6,182,212,0.5)]" 
-          />
-        </div>
-        
-        <div className="flex justify-center gap-6 items-center">
-           <button className="text-slate-400 hover:text-white transition-colors"><SkipBack size={24} /></button>
-           <button onClick={() => setPlaying(!playing)} className="bg-white text-black p-4 rounded-full hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-             {playing ? <Pause fill="black" size={24} /> : <Play fill="black" size={24} className="ml-1"/>}
-           </button>
-           <button className="text-slate-400 hover:text-white transition-colors"><SkipForward size={24} /></button>
-        </div>
-      </div>
-      <p className="absolute bottom-8 text-slate-500/70 text-xs uppercase tracking-widest font-semibold">End of 2025 Recap</p>
+      {/* Footer kecil */}
+      <motion.p 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2, duration: 1 }}
+        className="absolute bottom-10 text-slate-600 text-[10px] uppercase tracking-[0.3em]"
+      >
+         Chapter 19, Begins.
+      </motion.p>
     </div>
   );
 };
